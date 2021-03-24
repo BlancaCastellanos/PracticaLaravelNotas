@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <h1>{{ $notas-> titulo}}</h1>
 
-                        <form action="POST" action="{{url ("notas/{$notas->id}/editar")}}">
+                        <form method="POST" action="{{url ("notas/{$notas->id}/editar")}}">
                             @csrf
                             @method('PUT')
                             <label for="title" class="field-label">Título: </label>
